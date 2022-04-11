@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    RemoteControl w;
-    w.show();
+    RemoteControl remoteControl;
+    remoteControl.show();
     return a.exec();
 }
