@@ -67,5 +67,9 @@ void RemoteControl::but_volumeDown() {
     if (is_Working && currentVolume > 0) { currentVolume -= 10; mon_volume(); }
 }
 
-void RemoteControl::mon_program() { ui.lcdNumber->display(currentProgram); }
-void RemoteControl::mon_volume() { ui.lcdNumber_2->display(currentVolume); }
+void RemoteControl::mon_program() {
+    ui.lcdNumber->display(currentProgram);
+}
+void RemoteControl::mon_volume() {
+    ui.lcdNumber_2->display(currentVolume);
+}
