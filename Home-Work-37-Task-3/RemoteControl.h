@@ -34,7 +34,7 @@ public slots:
     void mon_volume();
 
 private:
-    Ui::RemoteControlClass ui;
+    Ui::RemoteControlClass remoteControl;
     int currentProgram, currentVolume;
     bool is_Working;
 };

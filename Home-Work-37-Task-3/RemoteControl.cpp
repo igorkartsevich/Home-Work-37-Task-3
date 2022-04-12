@@ -2,21 +2,21 @@
 
 RemoteControl::RemoteControl(QWidget *parent) : QMainWindow(parent)
 {
-    ui.setupUi(this);
+    remoteControl.setupUi(this);
     
-    ui.lcdNumber->setDigitCount(3);
-    ui.lcdNumber_2->setDigitCount(3);
+    remoteControl.lcdNumber->setDigitCount(3);
+    remoteControl.lcdNumber_2->setDigitCount(3);
     
     is_Working = false;
-    ui.lcdNumber->setVisible(is_Working);
-    ui.lcdNumber_2->setVisible(is_Working);
+    remoteControl.lcdNumber->setVisible(is_Working);
+    remoteControl.lcdNumber_2->setVisible(is_Working);
 }
 
 void RemoteControl::but_On() {
     is_Working = !is_Working;
 
-    ui.lcdNumber->setVisible(is_Working);
-    ui.lcdNumber_2->setVisible(is_Working);
+    remoteControl.lcdNumber->setVisible(is_Working);
+    remoteControl.lcdNumber_2->setVisible(is_Working);
 
     currentProgram = 0; mon_program();
     currentVolume = 0; mon_volume();
@@ -68,8 +68,8 @@ void RemoteControl::but_volumeDown() {
 }
 
 void RemoteControl::mon_program() {
-    ui.lcdNumber->display(currentProgram);
+    remoteControl.lcdNumber->display(currentProgram);
 }
 void RemoteControl::mon_volume() {
-    ui.lcdNumber_2->display(currentVolume);
+    remoteControl.lcdNumber_2->display(currentVolume);
 }
