@@ -1,7 +1,6 @@
 #pragma once
 
 #include <QMainWindow>
-#include <QLCDNumber>
 #include "ui_RemoteControl.h"
 
 class RemoteControl : public QMainWindow
